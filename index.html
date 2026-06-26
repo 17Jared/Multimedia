@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Our Wildlife</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-logo" aria-hidden="true">🌿</span>
+      <span class="site-name">WildGuard</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="hero" aria-labelledby="main-heading">
+      <h1 id="main-heading" class="hero-title">Save Our Wildlife</h1>
+      <p class="hero-sub">Every species lost is a thread pulled from the web of life.</p>
+    </section>
+
+    <section class="video-section" aria-label="Wildlife video">
+
+      <div class="video-wrapper" id="videoWrapper">
+        <video
+          id="wildlifeVideo"
+          class="video-player"
+          controls
+          preload="metadata"
+          aria-label="Wildlife conservation video"
+        >
+          <source src="Wildlife.mp4" type="video/mp4" />
+          <p>Your browser does not support HTML5 video.
+            <a href="Wildlife.mp4">Download the video</a> instead.
+          </p>
+        </video>
+      </div>
+
+      <div class="video-controls">
+        <button
+          id="toggleBtn"
+          class="btn-toggle"
+          aria-pressed="false"
+          aria-controls="wildlifeVideo"
+        >
+          <span class="btn-icon" aria-hidden="true">▶</span>
+          <span class="btn-label">Play Video</span>
+        </button>
+      </div>
+
+      <div class="video-description" aria-label="Video description">
+        <p>
+          Across the world, thousands of species face extinction due to habitat loss,
+          poaching, and climate change. This short film takes you into the wild —
+          from forest floors to ocean depths — to witness the breathtaking diversity
+          we stand to lose. Join our mission to protect these irreplaceable animals
+          before it's too late.
+        </p>
+        <p class="description-cta">
+          Together, we can make a difference. <strong>Act now.</strong>
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 WildGuard Conservation. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
